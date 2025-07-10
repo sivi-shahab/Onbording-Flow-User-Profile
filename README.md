@@ -149,6 +149,8 @@ docker compose up -d
     ✅ Save Password
 4. Click Save — and you’re connected!
 
+![Table Created](docs/ERD_postgres.jpg)
+
 ## 4. Run the Application
 
 Start the FastAPI server python main.py
