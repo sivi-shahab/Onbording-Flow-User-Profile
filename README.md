@@ -5,6 +5,7 @@
 
 # 2. Schema Code
 
+```sql
 -- 2.1 Flow versioning & branching
 CREATE TABLE flow_versions (
   id           UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -62,6 +63,7 @@ CREATE TABLE user_profile_history (
   valid_from   TIMESTAMP WITH TIME ZONE DEFAULT now(),
   valid_to     TIMESTAMP WITH TIME ZONE
 );
+```
 
 # 3. Design Explanation (200–300 words)
 
