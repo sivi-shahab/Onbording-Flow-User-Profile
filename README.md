@@ -87,7 +87,7 @@ My design cleanly separates flow definitions from user data, enabling independen
 
     Because rules belong to a flow version, you can pivot branching behaviors simply by inserting/updating rows—no code redeploy needed.
 
-This schema supports all requested question types via a discriminator column (type) and stores free‐text, numeric, or choice answers in the same table, keeping queries straightforward. Adding new question types or data fields requires no table migrations—just use JSONB in snapshots or add new columns to user_answers if needed. Historic flows and profiles remain queryable, offering full traceability of both how the onboarding changed over time and how each user’s profile evolved.
+This schema supports all requested question types via a discriminator column (type) and stores free‐text, numeric, or choice answers in the same table, keeping queries straightforward. Adding new question types or data fields requires no table migrations just use JSONB in snapshots or add new columns to user_answers if needed. Historic flows and profiles remain queryable, offering full traceability of both how the onboarding changed over time and how each user’s profile evolved.
 
 
 
@@ -138,7 +138,7 @@ Check for successful installation in the terminal output.
 ## 3. Start PostgreSQL & PGAdmin in containers:
 docker compose up -d
 
-🌐 If using PGAdmin (via Docker browser)
+🌐 Using PGAdmin (via Docker browser)
 1. Go to http://localhost:5050
 2. Login using the credentials from your .env file
 3. Create a new server:
